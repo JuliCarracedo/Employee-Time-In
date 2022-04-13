@@ -5,9 +5,13 @@ class MyTime
     end
 
     def later_than? other_time
-        t = @time.tr(':','')
-        ot = other_time.tr(':','')
+        t = @time.tr(':','').to_i
+        ot = other_time.time.tr(':','').to_i
 
-        return parse_int(t) > parse_int(ot)
+        return  t > ot 
+    end
+
+    def is
+        return @time
     end
 end

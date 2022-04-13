@@ -7,7 +7,7 @@ class Employee
         @times = []
     end
 
-    def insert_times timeIn timeOut
+    def insert_times timeIn, timeOut
         @timeIn = MyTime.new(timeIn)
         @timeOut = MyTime.new(timeOut)
         @times << [@timeIn, @timeOut]
