@@ -8,7 +8,7 @@ class MyTime
         t = @time.tr(':','').to_i
         ot = other_time.time.tr(':','').to_i
 
-        return  t > ot 
+        return  t >= ot 
     end
 
     def is
