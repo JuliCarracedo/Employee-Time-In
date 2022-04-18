@@ -55,4 +55,10 @@ module Routines
         return employee
     end
 
+    def print_employee_times e
+        puts "-----------------------------------------------------"
+        puts "| #{e.name}| #{e.times["MON"] || " -- "}|#{e.times["TUE"] || " -- "}|#{e.times["WED"] || " -- "}|#{e.times["THU"] || " -- "}|#{e.times["FRI"] || " -- "}|#{e.times["SAT"] || " -- "}|#{e.times["SUN"] || " -- "}"
+        puts "-----------------------------------------------------"
+    end
+
 end
