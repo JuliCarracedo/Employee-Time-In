@@ -8,8 +8,8 @@ class Employee
     end
 
     def insert_times time_in, time_out, day
-        @time_in = MyTime.new(time_in)
-        @time_out = MyTime.new(time_out)
+        @time_in = time_in
+        @time_out = time_out
 
         #Check that times are correctly located
 
