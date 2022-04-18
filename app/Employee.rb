@@ -16,6 +16,10 @@ class Employee
         @times[day] = [@time_in, @time_out]
     end
 
+    def see_day day
+        
+        return @times[day] ? "#{@times[day][0].time}-#{@times[day][1].time}" : nil
+    end
     private 
 
 end
