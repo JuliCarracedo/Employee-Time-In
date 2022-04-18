@@ -56,9 +56,11 @@ module Routines
     end
 
     def print_employee_times e
-        puts "-----------------------------------------------------"
-        puts "| #{e.name}| #{e.see_day("MON") || " -- "}|#{e.see_day("TUE") || " -- "}|#{e.see_day("WED") || " -- "}|#{e.see_day("THU") || " -- "}|#{e.see_day("FRI") || " -- "}|#{e.see_day("SAT") || " -- "}|#{e.see_day("SUN") || " -- "}|"
-        puts "-----------------------------------------------------"
+        puts "----------------------------------------------------------------"
+        puts "| NAME |MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY|"
+        puts "----------------------------------------------------------------"
+        puts "| #{e.name}| #{e.see_day("MON") || " ----- "}|#{e.see_day("TUE") || " ----- "}|#{e.see_day("WED") || " ----- "}|#{e.see_day("THU") || " ----- "}|#{e.see_day("FRI") || " ----- "}|#{e.see_day("SAT") || " ----- "}|#{e.see_day("SUN") || " ----- "}|"
+        puts "----------------------------------------------------------------"
     end
 
 end
