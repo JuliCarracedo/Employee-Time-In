@@ -63,4 +63,8 @@ module Routines
         puts "------------------------------------------------------------------------------"
     end
 
+    def check_encounters employee1, employee2
+        return employee1.times_encountered(employee2)
+    end
+
 end
