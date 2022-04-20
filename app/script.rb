@@ -10,7 +10,7 @@ while true
     employee = createEmployee
     employees << employee
     print_employee_times(employee)
-    puts "Press any key to continue, or q to quit inserting users"
+    puts "Press enter to continue, or q to quit inserting users"
     break if gets.strip === "q"
 end
 

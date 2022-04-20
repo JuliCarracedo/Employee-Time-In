@@ -44,7 +44,7 @@ module Routines
                     time_out = time
                     break
                 elsif time_in.later_than?(time)
-                    puts "Your chec-out time must be later than your check-in time"
+                    puts "Your check-out time must be later than your check-in time"
                 else
                     puts "Invalid time format"
                 end
